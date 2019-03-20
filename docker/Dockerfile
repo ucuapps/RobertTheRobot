@@ -25,10 +25,10 @@ RUN set -x && \
     echo "Running one-liner" && \
     wget -O /tmp/oneliner "$( echo "$remote_deploy_script" | sed 's/#/%23/g' )" && \
     chmod 755 /tmp/oneliner && \
-    gosu $MY_USERNAME /tmp/oneliner -o ldemk -r roberttherobot -b master -v kinetic && \
+    gosu $MY_USERNAME /tmp/oneliner -o ldemk -r robert_the_robot -b master -v kinetic && \
     \
     echo "Sourcing workspace in .bashrc" && \
-    echo 'source /home/$MY_USERNAME/workspace/roberttherobot/base/devel/setup.bash' >> /home/$MY_USERNAME/.bashrc && \
+    echo 'source /home/$MY_USERNAME/workspace/robert_the_robot/base/devel/setup.bash' >> /home/$MY_USERNAME/.bashrc && \
     \
     echo "Removing cache" && \
     apt-get clean && \
