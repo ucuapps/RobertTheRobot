@@ -1,3 +1,9 @@
+Required Software 
+1. Atollic TrueStudio 9.3.0 (https://atollic.com/truestudio/)
+2. STM32CubeMX 5.1.0 (https://www.st.com/en/development-tools/stm32cubemx.html)
+
+
+
 1. Clone this repository and build firmware.
 2. Start docker
 3. Separate console window to 4 parts.
