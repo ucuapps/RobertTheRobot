@@ -1,6 +1,6 @@
 # RobertTheRobot
 
-Robert the hardware mobile robot  
+Robert the hardware mobile robot
 
 [![License](https://img.shields.io/github/license/ucuapps/robert.svg)](https://github.com/ucuapps/robert/blob/kinetic-devel/LICENSE)
 
