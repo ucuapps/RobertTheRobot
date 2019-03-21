@@ -1,0 +1,15 @@
+1. Clone this repository and build firmware.
+2. Start docker
+3. Separate console window to 4 parts.
+4. Run roscore
+5. Run rosrun rosserial_python serial_node.py /dev/ttyACM0 _baud:=115200 if used STLink UART
+6. Run rosrun rosserial_python serial_node.py /dev/ttyUSB0 _baud:=115200 if used external USB to UART converter (connected to pins PF6 and PF7 of MCU)
+7. Run rostopic echo chatter
+8. Run ostopic pub led std_msgs/UInt16 <parameter> - 0 - to disable LD3, 1 - to enable LD3 (LD3 is red) 
+9. If everything is made correct, you will see  "data: "hello world!" " messages in the terminal and you will be able to controll LD3 from console
+
+
+
+
+
+
