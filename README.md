@@ -16,14 +16,14 @@ Please follow these steps to run Docker container on your machine.
 sudo usermod -aG docker $USER
 ```
  4. Logout and login to your machine again :)
- 5. For development [the following](http://hub.docker.com/r/ucuapps/robert_the_robot/) docker container was used.
+ 5. For development [the following](http://hub.docker.com/r/lyubomyrd/roberttherobot/) docker container was used.
  6. To pull it please run
 ```bash
-docker pull ucuapps/robert_the_robot:latest
+docker pull lyubomyrd/roberttherobot:latest
 ```
  7. Use the following command to start Docker container
 ```bash
-docker run -it --name robert_dev -p 8080:8080 -e DISPLAY -e LOCAL_USER_ID=$(id -u) -v /tmp/.X11-unix:/tmp/.X11-unix:rw ucuapps/robert_the_robot:latest
+docker run -it --name rtr_dev -p 8080:8080 -e DISPLAY -e LOCAL_USER_ID=$(id -u) -v /tmp/.X11-unix:/tmp/.X11-unix:rw lyubomyrd/roberttherobot:latest
 ```
  8. Black window of [Terminator](https://gnometerminator.blogspot.com/p/introduction.html) UI console will appear after some time.
  9. You can use it's features to [split terminal window](https://linux.die.net/man/1/terminator) into smaller terminals and run few commands in parallel (Ctrl+Shift+E).
@@ -34,7 +34,7 @@ sudo usermod -a -G dialout user
 
 In order to relaunch docker container after you closed Terminator window or rebooted machine please run
 ```bash
-docker start robert_dev
+docker start rtr_dev
 ```
 After some time Terminator window will reappear.
 
