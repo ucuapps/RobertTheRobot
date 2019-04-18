@@ -8,7 +8,7 @@
     
 1.  Clone this repository and build firmware.
     
-2.  Start docker
+2.  Start docker docker ***start rtr_dev***
     
 3.  Separate console window to 4 parts.
     
