@@ -26,7 +26,6 @@ devel_isolated/
 *.wikidoc
 
 # eclipse stuff
-.project
 .cproject
 
 # qcreator stuff
