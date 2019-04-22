@@ -41,7 +41,7 @@ void MX_UART7_Init(void)
   huart7.Init.OverSampling = UART_OVERSAMPLING_16;
   huart7.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
   huart7.Init.Prescaler = UART_PRESCALER_DIV1;
-  huart7.Init.FIFOMode = UART_FIFOMODE_DISABLE;
+  huart7.Init.FIFOMode = UART_FIFOMODE_ENABLE;
   huart7.Init.TXFIFOThreshold = UART_TXFIFO_THRESHOLD_1_8;
   huart7.Init.RXFIFOThreshold = UART_RXFIFO_THRESHOLD_1_8;
   huart7.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
@@ -66,7 +66,7 @@ void MX_USART3_UART_Init(void)
   huart3.Init.OverSampling = UART_OVERSAMPLING_16;
   huart3.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
   huart3.Init.Prescaler = UART_PRESCALER_DIV1;
-  huart3.Init.FIFOMode = UART_FIFOMODE_DISABLE;
+  huart3.Init.FIFOMode = UART_FIFOMODE_ENABLE;
   huart3.Init.TXFIFOThreshold = UART_TXFIFO_THRESHOLD_1_8;
   huart3.Init.RXFIFOThreshold = UART_RXFIFO_THRESHOLD_1_8;
   huart3.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
