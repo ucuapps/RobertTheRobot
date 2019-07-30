@@ -29,7 +29,7 @@ docker run -it --privileged --name rtr_dev -p 8080:8080 -e DISPLAY -e LOCAL_USER
  9. You can use it's features to [split terminal window](https://linux.die.net/man/1/terminator) into smaller terminals and run few commands in parallel (Ctrl+Shift+E).
  10. If you want to run real robot add user to dialout group and restart Docker container
 ```bash
-sudo usermod -a -G dialout user
+sudo usermod -a -G dialout $(whoami)
 ```
 
 In order to relaunch docker container after you closed Terminator window or rebooted machine please run
